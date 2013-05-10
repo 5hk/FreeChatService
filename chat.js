@@ -22,7 +22,7 @@ function handler (req, res) {
 }
 
 var service = {id: 'lucy', 
-	name: 'Lucy\'s Gorgeous Chatting', 
+	name: 'Lucy\'s Gorgeous Proj.', 
 	desc: 'Developed by heekyoung.oh', 
 	url: 'http://lucy.dangsam.com',
 	count: 0};
