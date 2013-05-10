@@ -38,6 +38,9 @@ monitor.report(service);
 	}, 10000);
 })();
 
+var usernamelist = {};
+var useridlist = {};
+
 io.sockets.on('connection', function (socket) {
 	socket.on('client chat', function (data) {
 		console.log(data);
@@ -57,6 +60,16 @@ io.sockets.on('connection', function (socket) {
 			callback(arguments);
 		});
 	}
+	
+	socket.on('systemIn', function(data){
+		if(data.name) {
+			usernamelist[data.name] = socket.nickname = data.name;
+			useridlist[data.name] = socket.id;
+			
+			io.sockets.emit('systemIn', data);
+			io.sockets.emit('systemList', usernamelist);
+		}
+	});
 	
 	socket.on('git pull', function (data) {
 		console.log('git pull');
