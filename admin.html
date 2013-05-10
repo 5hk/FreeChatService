@@ -4,9 +4,9 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
 	<title>lisyoen's admin</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-	<script src="http://lisyoen.cafe24.com:8003/socket.io/socket.io.js"></script>
+	<script src="http://lisyoen.cafe24.com:8004/socket.io/socket.io.js"></script>
 	<script>
-var socket = io.connect('http://lisyoen.cafe24.com:8003');
+var socket = io.connect('http://lisyoen.cafe24.com:8004');
 
 function writeMessage(message) {
 	message_list.innerHTML = message + "<br />" + message_list.innerHTML;
