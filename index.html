@@ -5,6 +5,13 @@
 	<title>lisyoen's www root</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 	<script src="http://lisyoen.cafe24.com:8004/socket.io/socket.io.js"></script>
+	<script type="text/css">
+	#btnname{ border:1px solid #aaa; font-size:1.0em; background-color:#545765; color:#FFF; width:100%; height:50px; }
+	#username{width:99%;}
+	#divHome{width:100%; height:150px;}
+	#divHome p{margin:5px; width:97%;}
+	#divChatting{display:none;}
+	</script>
 	<script>
 var socket = io.connect('http://lisyoen.cafe24.com:8004');
 
@@ -64,13 +71,7 @@ $(function() {
 
 </script>
 
-<script type="text/css">
-	#btnname{ border:1px solid #aaa; font-size:1.0em; background-color:#545765; color:#FFF; width:100%; height:50px; }
-	#username{width:99%;}
-	#divHome{width:100%; height:150px;}
-	#divHome p{margin:5px; width:97%;}
-	#divChatting{display:none;}
-</script>
+
 </head>
 <body>
 <div id="divHome">
