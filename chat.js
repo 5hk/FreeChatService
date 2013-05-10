@@ -21,10 +21,10 @@ function handler (req, res) {
     });
 }
 
-var service = {id: 'lisyoen', 
-	name: 'Simple Chatting', 
-	desc: 'Developed by lisyoen', 
-	url: 'http://lisyoen.dangsam.com',
+var service = {id: 'lucy', 
+	name: 'Lucy\'s Gorgeous Chatting', 
+	desc: 'Developed by heekyoung.oh', 
+	url: 'http://lucy.dangsam.com',
 	count: 0};
 monitor.report(service);
 
