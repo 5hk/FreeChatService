@@ -35,7 +35,7 @@ $(function() {
 	var nickname = "";
 	$("#btnname").click(function(){
 		nickname = $("#username").val();
-		if (nickname == "") alert("아이디를 입력하세요");
+		if (nickname == "") alert("ID");
 		else {
 			socket.emit("systemIn", {
 				name: nickname
@@ -71,7 +71,7 @@ $(function() {
 </head>
 <body>
 <div id="divHome">
-	<p style="margin-top:50px;">닉네임 적어보셈.</p>
+	<p style="margin-top:50px;">ID ?</p>
 	<p>
 		<input type="text" name="username" id="username" value="" />
 	</p>
