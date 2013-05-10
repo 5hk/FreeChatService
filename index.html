@@ -48,14 +48,14 @@ $(function() {
 	
 </head>
 <body>
-<div id="divChatting" width="280" height="700">
+<div id="divChatting">
 	Input
 	<input type="message" onkeydown="if (event.keyCode == 13) send() " id="input">
 	<button type="button" onclick="send()">Send</button>
 	<div id="message_list"></div>
 </div>
 <div id="divGame" align="center">
-	<iframe width="970" height= "500" name="iframe1" frameborder="no" src="racer.html" scrolling="auto"></iframe>
+	<iframe name="iframe1" frameborder="no" src="racer.html" scrolling="auto"></iframe>
 </div>
 
 
